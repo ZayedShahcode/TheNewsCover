@@ -1,0 +1,35 @@
+header{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.5rem;
+}
+nav{
+    border: 1px solid rgba(255, 255, 255,0.6);
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navitem{
+    width: 100px;
+    font-size: 1.2rem;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+.urltoWeb{
+    text-decoration: none;
+}
+
+.navitem:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
