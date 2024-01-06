@@ -1,6 +1,7 @@
-# React + Vite
+# The News Cover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a news website I made using NewsApi. Since its just a developer key only 100 calls can be made in a day.
+I used React + Vite to create this website 
 
 Currently, two official plugins are available:
 
