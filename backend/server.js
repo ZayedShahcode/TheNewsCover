@@ -1,8 +1,13 @@
 const express = require('express');
 const cors = require('cors')
 require('dotenv').config()
+
+const corsOptions = {
+  origin: "YOUR_FRONTEND_URL", // frontend URI (ReactJS)
+}
+
 const app = express();
-app.use(cors())
+app.use(cors(corsOptions));
 app.use(express.json())
 
 
