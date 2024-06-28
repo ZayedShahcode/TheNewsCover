@@ -1,0 +1,49 @@
+.container{
+    font-family: Open Sans;
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    height: auto;    
+}
+
+.inputForm{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.query{
+    width:auto;
+    height: 1.5rem;
+    border: 1px solid rgb(136, 190, 28);
+    background-color: black;
+    color: white;
+    font-family: Open Sans;
+    grid-column: 2 / span 3;
+    
+}
+
+h3{
+    font-size: clamp(0.7rem, 1rem, 1.5rem);
+    
+}
+
+button{
+    background-color: rgb(4, 249, 8);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(81, 10, 246);
+    width: 7rem;
+    height: 2rem;
+    border-radius: 4px;
+   grid-column: 2 / 3;
+   font-size: 1rem;
+   font-family:Open Sans;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

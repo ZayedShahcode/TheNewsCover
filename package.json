@@ -1,0 +1,27 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "starts" : "nodemon backend/server.js",
+    "client" : " npm start --prefix frontend",
+    "dev":"concurrently \"npm starts\" \"npm run client\"",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "start-server": "cd backend && node app.js",
+    "build-client": "cd frontend && npm run build",
+    "start-client": "cd frontend && npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "request": "^2.88.2"
+  }
+}
