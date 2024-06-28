@@ -16,7 +16,7 @@ app.get('/news',(req,res)=>{
 
 
 
-let query = "India";
+
 const KEY = process.env.KEY;
 
 
@@ -37,5 +37,5 @@ app.get('/news',(req,res)=>{
     
 })
 
-const PORT = process.env.PORTBACK || 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT);
