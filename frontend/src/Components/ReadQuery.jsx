@@ -6,7 +6,7 @@ export default function ReadQuery({query,setQuery,data,setData}) {
 
   const handleOnClick = (e)=>{
     e.preventDefault();
-    axios.post("https://thenewscover.onrender.com//news",{query})
+    axios.post("https://thenewscover.onrender.com/news",{query})
     .then(
     (res)=>{
        setData(res.data.articles);
