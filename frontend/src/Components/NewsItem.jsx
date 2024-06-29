@@ -9,7 +9,7 @@ export default function NewsItem({item}) {
         <img src={item.urlToImage} alt="pic" />
         </div>
         <div className="description"><p>{item.description}</p>
-        <a href={item.url} target="_blank"  rel="noreferrer" >Link</a>
+        <div className="link"> <a href={item.url} target="_blank"  rel="noreferrer" >Link</a></div>
         </div>
     </div>
   )
