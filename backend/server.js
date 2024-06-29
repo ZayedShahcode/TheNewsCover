@@ -11,8 +11,6 @@ app.use(express.json())
 app.use(cors(corsOptions));
 
 
-
-
 app.get('/',(req,res)=>{
   res.send("Api is ready");
 })
