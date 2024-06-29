@@ -6,15 +6,12 @@ export default function ReadQuery({query,setQuery,data,setData}) {
 
   const handleOnClick = (e)=>{
     e.preventDefault();
-    axios.post("http://localhost:5000/news",{query})
+    axios.post("https://thenewscover.onrender.com/news",{query})
     .then(
     (res)=>{
        setData(res.data.articles);
     }
-   )
-   console.log(data)
-
-    
+   ) 
    
   }
   return (
