@@ -5,17 +5,25 @@ import { useData } from '../Context/NewsContext'
 
 export default function ReadQuery() {
 
-  const {query,setQuery,setData} = useData();
+  const {query,setQuery,setData,isLoading,setIsLoading} = useData();
 
   const handleOnClick = (e)=>{
     e.preventDefault();
+    try{
+      setIsLoading(true);
     axios.post("https://thenewscover.onrender.com/news",{query})
     .then(
     (res)=>{
        setData(res.data.articles);
+       setIsLoading(false)
     }
    ) 
-   
+    }
+    catch{
+      throw new Error("Cannot fetch Data");
+    }finally{
+      setIsLoading(false);
+    }
   }
   return (
     <div className="container">
