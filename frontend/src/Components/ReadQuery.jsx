@@ -1,8 +1,11 @@
 import React from 'react'
 import './ReadQuery.css'
 import axios from 'axios'
+import { useData } from '../Context/NewsContext'
 
-export default function ReadQuery({query,setQuery,data,setData}) {
+export default function ReadQuery() {
+
+  const {query,setQuery,setData} = useData();
 
   const handleOnClick = (e)=>{
     e.preventDefault();

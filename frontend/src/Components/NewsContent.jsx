@@ -1,7 +1,10 @@
 import React from 'react'
 import NewsItem from './NewsItem'
+import { useData } from '../Context/NewsContext'
 
-export default function NewsContent({data}) {
+export default function NewsContent() {
+
+  const {data}=useData();
   return (
     <div style={{display:"flex", flexWrap:"wrap"}}>{data.map((item)=>{ 
     

@@ -1,21 +1,19 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './App.css'
 import Header from "./Components/Header";
 import ReadQuery from "./Components/ReadQuery";
-import { useState } from "react";
 import NewsContent from "./Components/NewsContent";
+import { DataProvider } from "./Context/NewsContext";
 
-export default function App(){
+export default function App() {
 
-    const [query,setQuery] = useState("");
-    const [data,setData] = useState([])
 
- return(
-    <>
-    <Header></Header>
-    <ReadQuery query={query} setQuery={setQuery} data={data} setData={setData}></ReadQuery>
-    <NewsContent data={data}></NewsContent>
 
-    </>
- )
+   return (
+      <DataProvider>
+         <Header></Header>
+         <ReadQuery></ReadQuery>
+         <NewsContent></NewsContent>
+      </DataProvider>
+   )
 }
