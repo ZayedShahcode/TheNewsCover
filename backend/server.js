@@ -16,7 +16,7 @@ const KEY = process.env.KEY;
 
 app.post('/news',(req,res)=>{
   let query = req.body.query;
-  fetch(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${KEY}`)
+  fetch(`https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&apiKey=${KEY}`)
   .then(response => response.json())
   .then(data=>res.send(data));
  
