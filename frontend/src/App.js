@@ -6,9 +6,6 @@ import NewsContent from "./Components/NewsContent";
 import { DataProvider } from "./Context/NewsContext";
 
 export default function App() {
-
-
-
    return (
       <DataProvider>
          <Header></Header>
